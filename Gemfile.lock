@@ -156,6 +156,10 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rename (1.0.6)
+      activesupport
+      rails (>= 3.0.0)
+      thor (>= 0.19.1)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -250,6 +254,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.2)
   rails_layout
+  rename
   rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
@@ -262,7 +267,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.4.2p198
 
 BUNDLED WITH
-   1.14.6
+   1.15.4
