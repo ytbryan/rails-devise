@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@rails/webpacker": "^3.4.1",
+    "rails-erb-loader": "^5.4.1",
     "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.5.16"
