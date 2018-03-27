@@ -11,6 +11,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'gon'
 gem 'vuejs'
 gem 'emd'
+gem 'redcarpet'
 gem 'pg', '~> 0.20.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
