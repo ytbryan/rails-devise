@@ -24,6 +24,9 @@ db/*.sqlite3
 # add /config/database.yml if it contains passwords
 # /config/database.yml
 
+# Ignore uploaded files in development
+/storage/*
+
 # various artifacts
 **.war
 *.rbc
@@ -82,8 +85,17 @@ pickle-email-*.html
 
 # tilde files are usually backup files from a text editor
 *~
+/node_modules
+yarn-debug.log*
+.yarn-integrity
+dump.rdb
 /public/packs
 /public/packs-test
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+/public/assets
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
