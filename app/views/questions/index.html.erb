@@ -1,33 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-9">
+    <h4><u>All Questions</u></h4>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-3">
+    <%= link_to  "New Question", new_question_path, class: "btn btn-success float_right", title: "Post a question" %>
+    <%= link_to  "<i class='fa fa-search'></i>".html_safe, searches_path, class: "btn btn-default float_right margin-right-5", title: "Find a question", "data-turbolinks": false %>
+  </div>
+</div>
 
-<h4>Questions</h4>
+<hr>
+<% @questions.each_with_index do |question, index| %>
+  <h4><%= calculate_index(params[:page], index, @limit) %>. <%= link_to question.title, question %></h4> 
+  <p><%= question.answers.count %> comments </p>
+  <p>Posted <%= time_ago_in_words(question.created_at) %> ago, by <span class="dotted"><%= question.user.name %></span></p>
+  <br>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>User</th>
-      <th colspan="3"></th>
-      <th>Leave an answer</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @questions.each do |question| %>
-      <tr>
-        <td><%= question.title %></td>
-        <td><%= question.body %></td>
-        <td><%= question.user_id %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'give an answer', new_answer_path %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Question', new_question_path %>
+<%= paginate @questions %>

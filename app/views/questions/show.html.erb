@@ -1,17 +1,46 @@
-<p id="notice"><%= notice %></p>
-
 <ol class="breadcrumb">
   <li><a href="/">All questions</a></li>
   <li class="active"><%= @question.title[0..35] + " ...." %></li>
 </ol>
 
 <h3>
-  <%= @question.title %>
+  <%= emd(@question.title) %>
 </h3>
-<p><%= link_to 'Edit question', edit_question_path(@question) %>, <%= link_to 'Delete question', @question, method: :delete, data: { confirm: 'Are you sure?' } %>
- - <%= @question.user.name %>, <%= time_ago_in_words(@question.created_at) %> ago</p>
 <hr>
-<p>
-  <%= @question.body %>
-</p>
+
+<div class="panel panel-info">
+  <div class="panel-heading"><p><b><%= @question.user.name %></b> posted <%= time_ago_in_words(@question.created_at) %> ago <%= link_to 'Edit question', edit_question_path(@question)  %> | <%= link_to 'Delete question', @question, method: :delete, data: { confirm: 'Are you sure?' } %></p></div>
+  <div class="panel-body">
+    <%= emd(@question.body) %>
+  </div>
+</div>
+
+<hr>
+
+<% if @answers.count != 0 %>
+  <% @answers.each do |answer| %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <b><%= answer.user.name %></b> commented <%= time_ago_in_words(answer.created_at) %> ago
+            <%= link_to 'Edit comment', edit_answer_path(answer, this_question: @question)  %> |
+            <%= link_to 'Delete comment', answer, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      
+      <div class="panel-body">
+       <%= emd(answer.body) %>
+      </div>
+    </div>
+    <hr>
+  <% end %>
+
+  <b>There is a total of <%= @answers.count %> comment(s).</b>
+  <p class='grey'>Add a comment. You may use markdown in your comment.</p>
+  <%= render 'answers/form', answer: @answer, this_question: @question %>
+<% else %>
+
+  <hr>
+  <b>There is no comment yet. Be the first to comment.</b>
+  <p class='grey'>You may use markdown in your comment.</p>
+  <%= render 'answers/form', answer: @answer, this_question: @question %>
+<% end %>
 
