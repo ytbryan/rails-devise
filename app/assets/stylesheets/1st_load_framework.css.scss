@@ -81,3 +81,11 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color:#FAF1D9;
+  border-radius: 4px;
+}
