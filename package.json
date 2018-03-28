@@ -1,10 +1,14 @@
 {
   "dependencies": {
     "@rails/webpacker": "^3.4.1",
+    "add": "^2.0.6",
+    "axios": "^0.18.0",
     "rails-erb-loader": "^5.4.1",
     "vue": "^2.5.16",
+    "vue-instant": "^1.0.2",
     "vue-loader": "^14.2.2",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "vue-turbolinks": "^2.0.1"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

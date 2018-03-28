@@ -8916,17 +8916,17 @@ button.close {
     display: none !important;
   }
 }
-/* line 6, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 6, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 img {
   margin: 0 auto;
 }
 
-/* line 11, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 11, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 .navbar-brand {
   font-size: inherit;
 }
 
-/* line 36, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 36, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 main {
   background-color: #f7f3e8;
   padding-bottom: 80px;
@@ -8934,31 +8934,40 @@ main {
   margin-top: 51px;
 }
 
-/* line 44, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 44, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 section {
   margin-top: 20px;
 }
 
-/* line 52, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 52, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform {
   padding-top: 30px;
   max-width: 320px;
   margin: 0 auto;
 }
 
-/* line 57, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 57, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform form {
   padding-bottom: 40px;
 }
 
-/* line 62, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 62, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform .right {
   float: right !important;
 }
 
-/* line 76, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 76, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
 #error_explanation h2 {
   font-size: 16px;
+}
+
+/* line 85, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/1st_load_framework.css.scss */
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #FAF1D9;
+  border-radius: 4px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -8975,7 +8984,48 @@ section {
 
 
  */
-/* line 19, /Users/ytbryan/Desktop/rails-devise/app/assets/stylesheets/application.css.scss */
+/* line 18, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
 body {
   background-color: #f7f3e8;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 23, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.dotted {
+  border-bottom: 1px dotted #999;
+}
+
+/* line 27, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.border {
+  border: 1px solid #d1d1d1;
+}
+
+/* line 31, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.inline {
+  display: inline-flex;
+}
+
+/* line 34, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.float_left {
+  float: left;
+}
+
+/* line 38, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.float_right {
+  float: right;
+}
+
+/* line 42, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.grey {
+  color: #5f5f5f;
+}
+
+/* line 46, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.margin-right-5 {
+  margin-right: 5px;
+}
+
+/* line 50, /Users/ytbryan/Desktop/cookpad_qna/app/assets/stylesheets/application.css.scss */
+.width-70p {
+  width: 70%;
 }
