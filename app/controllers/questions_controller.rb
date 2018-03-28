@@ -5,16 +5,15 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
-  end
-
-  def all
-    @questions = Question.all
+     @limit = 5
+     @questions = Question.page(params[:page]).per(@limit)
   end
 
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @answer = Answer.new
+    @answers = Question.find(params[:id]).answers
   end
 
   # GET /questions/new
