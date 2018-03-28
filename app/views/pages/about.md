@@ -1,10 +1,10 @@
 ### About
 
-This web app is a Question and Answer application, built specially for the Cookpad's Ruby web developer interview. It is intended for internal usage only.
+This web app is a Question and Answer application, built specially for the Cookpad's Ruby developer interview. It is intended for internal usage only.
 
 ### Features
 
-Q&A is shipped with these features:
+Q&A is shipped with the following features:
 
 * Users can submit questions
 * Users can auth with Google Oauth
@@ -29,18 +29,16 @@ The main constraint is finiteness of time.
 
 The secondary constraint may be finiteness of resources.
 
-Hence, each feature is crafted with a minimal resources available using the fastest technique,known to me.
+Hence, each feature is crafted with a minimal resources available using the fastest technique, known to me.
 
 I also reused some of my own tools and gems to speed up the development process. These tools are namely:
 rails-devise, aka, emd, vuejs
 
 Some of the design patterns include: REST, DRY. But if you dig deep enough, you may find me repeating things or making careless mistake. Also tests are excluded but may be delivered if requested.
 
-Also used convention over configuration,
-
 ### Further thoughts
 
-Like a father to a child, it is difficult to talk about a particular features I am proud of. I am happy with this Q&A app that I made. This is also why styling is not forgotten. A minimal bootstrap is included to make things, behave and appear neat.
+Like a father to a child, it is difficult to talk about a particular feature I am proud of. I am happy with this Q&A app as it is. This is also why styling is not forgotten. A minimal bootstrap is included to make things, behave and appear neat.
 
 If the interviewer would like to nitpick a certain feature, I will say it's the search table that display the result. It uses a vue_component which I included.
 
@@ -58,6 +56,6 @@ Something that Apple Inc has attained. Ruby has accomplished. Rails has achieved
 
 ### Contact Author
 
-For any clarification or questions, please feel free to contact the author, ytbryan at [ytbryan@gmail.com](mailto:ytbryan@gmail.com).
+For further clarification or questions, please feel free to contact the author, ytbryan at [ytbryan@gmail.com](mailto:ytbryan@gmail.com).
 
 For a basic profile of ytbryan, you may visit his [GitHub](https://github.com/ytbryan) or [Twitter](http://twitter.com/ytbryan) account. Thank you.
