@@ -18,3 +18,38 @@ body {
   background-color: #f7f3e8;
   font-family: "Open Sans", sans-serif;
 }
+
+.dotted {
+  border-bottom: 1px dotted #999;
+}
+
+.border {
+  border: 1px solid #d1d1d1;
+}
+
+.inline {
+  display:inline-flex;
+}
+.float_left {
+  float:left;
+}
+
+.float_right {
+  float:right;
+}
+
+.grey {
+  color: rgb(95, 95, 95);
+}
+
+.margin-right-5 {
+  margin-right: 5px;
+}
+
+.width-70p {
+  width: 70%;
+}
+
+.sbx-google {
+  width: 80% !important;
+}
