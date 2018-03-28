@@ -1,6 +1,11 @@
-<h1>Editing Question</h1>
+<ol class="breadcrumb">
+  <li><a href="/">All questions</a></li>
+  <li><%= link_to @question.title[0..35] + " ....", @question %></li>
+  <li class="active">Editing question</li>
+</ol>
+
+<h4>Editing Question</h4>
 
 <%= render 'form', question: @question %>
 
-<%= link_to 'Show', @question %> |
-<%= link_to 'Back', questions_path %>
+

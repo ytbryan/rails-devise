@@ -1,22 +1,27 @@
 source 'https://rubygems.org'
 ruby '2.5.0'
 
-gem 'rename'
-gem 'sass-rails', '~> 5.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails'
-gem 'rails', '~> 5.2.0.rc2'
-gem 'puma', '~> 3.11'
-gem 'bootsnap', '>= 1.1.0', require: false
+
 gem 'gon'
-gem 'vuejs'
-gem 'redcarpet'
 gem 'emd'
+gem 'vuejs'
+gem 'rename'
+gem 'devise'
+gem 'redcarpet'
+gem 'webpacker'
+gem 'high_voltage'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'google_sign_in'
+gem 'puma', '~> 3.11'
 gem 'pg', '~> 0.20.0'
-gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'webpacker'
+gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails', '~> 5.0'
+gem 'rails', '~> 5.2.0.rc2'
+gem 'coffee-rails', '~> 4.2'
+gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -34,11 +39,6 @@ group :development do
   gem 'rails_layout'
   gem 'spring-commands-rspec'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'high_voltage'
 
 group :test do
   gem 'capybara'
