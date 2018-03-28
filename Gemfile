@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.5.0'
 
+ruby '2.5.0'
 
 gem 'gon'
 gem 'emd'
 gem 'vuejs'
 gem 'rename'
 gem 'devise'
+gem 'kaminari'
+gem 'pg_search'
 gem 'redcarpet'
 gem 'webpacker'
 gem 'high_voltage'
@@ -41,8 +43,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'launchy'
-  gem 'selenium-webdriver'
+  # gem 'capybara'
+  # gem 'database_cleaner'
+  # gem 'launchy'
+  # gem 'selenium-webdriver'
 end
