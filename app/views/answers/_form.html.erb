@@ -12,21 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, class: "width-70p", rows: "5" %>
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :question_id %>
-    <%= form.number_field :question_id %>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+    <%= form.hidden_field :question_id, value: this_question.id %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Add comment", class: 'btn btn-success' %>
   </div>
 <% end %>

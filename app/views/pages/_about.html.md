@@ -1,6 +1,6 @@
 ### About
 
-This web app is a Question and Answer application, built specially for the Cookpad's Ruby developer interview. It is intended for internal usage only.
+This web app is a Questions and Answers application, built specially for the Cookpad's Ruby developer interview. It is intended for internal usage only.
 
 ### Features
 
@@ -14,14 +14,13 @@ Q&A is shipped with the following features:
 
 ##### Addtionally:
 
-* Table pagination
-* Bookmarking questions
-* Carefully picked names
-* Autocompletion in search
-* Mobile compatible viewport
-* Open-sans fonts for readability
-* GitHub/Bootstrap inspired design
-* Turbolinks retained, speed guaranteed
+1. Table pagination -> done
+2. Carefully picked names -> done
+3. Autocompletion in search -> done
+4. Mobile responsive viewport -> done
+5. Open-sans fonts for readability -> done
+6. GitHub/Bootstrap inspired design -> done
+7. Turbolinks retained, speed guaranteed -> done
 
 ### The constraints
 
