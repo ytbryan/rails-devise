@@ -1,0 +1,1 @@
+GoogleSignIn::Identity.client_id = 970696825012-nnsvuna332d4drr2n4bt21a2gjoklh7h.apps.googleusercontent.com
