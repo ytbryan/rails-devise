@@ -25,9 +25,7 @@
   <% end %>
   <hr>
   <div>
-    <%= google_sign_in(url: "") do %>
-      <%= button_tag("Signin with Google") %>
-    <% end %>
+    <%= link_to "Or, use your Google account to sign up", user_google_oauth2_omniauth_authorize_path %>
   </div>
 </div>
 
